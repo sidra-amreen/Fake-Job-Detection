@@ -24,7 +24,7 @@ def top_terms(row: pd.DataFrame, k=5):
     out = []
     for i in idx:
         n = names[i].split("__")[1]
-        if n in LABELS:      # structured feature: show the actual value, not just the name
+        if n in LABELS:  
             v = row[n].iloc[0]
             out.append(f"{LABELS[n]}: {v}" if n == "description_length" else f"{LABELS[n]}: {'yes' if v else 'no'}")
         else:
