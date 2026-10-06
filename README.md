@@ -1,4 +1,4 @@
-# Fake Job Detection (Machine Learning)
+# Fake Job Detection 
 
 Flags fraudulent job postings by combining the posting text (TF-IDF) with structured signals
 (company logo/profile, salary given, contact email type, remote flag...) and explains why a posting
@@ -7,9 +7,9 @@ looks suspicious.
 ## Setup
 ```bash
 pip install -r requirements.txt
-python train.py       # generates data if missing, trains 3 models, saves job_model.joblib + results.png
-python predict.py     # checks 3 example postings
-python predict.py posting.json   # check your own posting
+python train.py       
+python predict.py     
+python predict.py posting.json   
 ```
 
 ## Pipeline
