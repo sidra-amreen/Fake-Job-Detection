@@ -1,4 +1,3 @@
-"""Shared feature definitions and rule-based red flags."""
 import re
 import pandas as pd
 
