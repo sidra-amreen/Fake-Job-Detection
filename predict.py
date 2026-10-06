@@ -1,9 +1,3 @@
-"""Check a job posting for signs of fraud.
-
-Usage:
-    python predict.py                  # runs 3 example postings
-    python predict.py posting.json     # JSON file with the posting fields
-"""
 import json
 import sys
 import joblib
