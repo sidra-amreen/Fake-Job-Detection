@@ -1,4 +1,3 @@
-"""Train, compare, evaluate and save the fake job posting detector."""
 import os
 import joblib
 import matplotlib
@@ -66,7 +65,6 @@ def main():
 
     best = fitted[best_name]
 
-    # Choose threshold on out-of-fold training predictions (no test leakage): maximize F1
     oof = cross_val_predict(make_pipe(models[best_name].named_steps["clf"]), X_tr, y_tr, cv=cv, method="predict_proba")[:, 1]
     p, r, t = precision_recall_curve(y_tr, oof)
     f1 = 2 * p[:-1] * r[:-1] / (p[:-1] + r[:-1] + 1e-9)
