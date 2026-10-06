@@ -1,10 +1,3 @@
-"""Generate a synthetic job-postings dataset (the real EMSCAD data needs a Kaggle login).
-
-Fake postings come in two flavors: obvious scams and *subtle* ones that look professional
-but contain a few suspicious signals. Some legitimate postings also use words like
-"remote" or "immediate start", so the task is not trivially separable.
-Replace data/jobs.csv with real data (see README) to use it for real.
-"""
 import numpy as np
 import pandas as pd
 
